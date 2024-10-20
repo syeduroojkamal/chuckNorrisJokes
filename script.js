@@ -1,6 +1,6 @@
 function fetchJoke() {
   const xhr = new XMLHttpRequest();
-  xhr.open("GET", "https://api.chucknorris.io/jokes/random");
+  xhr.open("GET", "https://api.chucknorris.io/jokes/random?category=dev");
 
   xhr.onreadystatechange = function () {
     if (this.readyState === 4) {
